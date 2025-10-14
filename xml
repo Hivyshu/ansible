@@ -1,0 +1,32 @@
+<students>
+     <Student>
+        <Name>Vyshu</Name>
+        <DOB>08/08/2002</DOB>
+        <Age>23</Age>
+        <Address>
+           <Address type="PERM">
+                <Doorno>2-89</Doorno>
+                <Street>Gndhi nagar</Street>
+        </Address>
+        <skills>
+            <skill>Java</skill>
+            <skill>Python</skill>
+            <skill>XML</skil>
+        </skills>
+     </Student>
+     <Student>
+         <Name>Vinay</Name>
+         <DOB>08/03/2002</DOB>
+         <Age>23</Age>
+         <Address>
+           <Address type="PERM">
+                <Doorno>2-89</Doorno>
+                <Street>Alinagar</Street>
+        </Address>
+        <skills>
+            <skill>Java</skill>
+            <skill>Python</skill>
+            <skill>XML</skil>
+        </skills>
+     </Student>
+</students>

@@ -1,0 +1,20 @@
+{
+"name": "Vyshu",
+"DOB": "01-08-2002",
+"adresses": [
+    { 
+        "type": "current",
+        "h-no": "1-33",
+        "street": "gandhi nagar",
+        "city": "hyd"
+    },
+    {
+        "type": "perm",
+        "H-no": "2-44",
+        "street": "baanagar",
+        "city": "bang"
+    }
+],
+"skills": ["java", "devops", "python"]
+
+}

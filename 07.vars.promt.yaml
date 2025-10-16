@@ -1,4 +1,4 @@
-- name: variable from promt
+- name: variables from prompt
   hosts: local
   connections: local
   vars_prompt: 

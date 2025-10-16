@@ -14,5 +14,5 @@ localhost
 
 [local:vars]
 COURSE=ansible
-DURATION=10hrs
+DURATION=9m
 Trainer=Vyshu

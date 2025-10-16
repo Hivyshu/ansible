@@ -7,6 +7,8 @@
      Trainer: Vyshu
   tasks:
    - name: print the course info
+    #  vars:
+    #   COURSE: Devops with aws
      ansible.builtin.debug:
        msg: "course name is :{{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
     

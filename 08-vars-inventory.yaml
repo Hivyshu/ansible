@@ -1,18 +1,11 @@
-[catalogue]
-172.31.23.197
-172.31.23.197
-172.31.23.197
-172.31.23.197
-
-[frontend]
-172.31.17.112
-[cart]
-172.31.23.197
-
-[local]
-localhost
-
-[local:vars]
-COURSE=ansible
-DURATION=9m
-Trainer=Vyshu
+- name: variables from files
+  hosts: local
+  connections: local 
+  
+  tasks:
+   - name: print the course info
+    #  vars:
+    #   COURSE: Devops with aws
+     ansible.builtin.debug:
+       msg: "course name is :{{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
+    

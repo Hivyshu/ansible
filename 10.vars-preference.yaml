@@ -6,7 +6,7 @@
   vars_files: 
   - course.yaml
   vars_prompt:
-  - name: testing variable preference
+  - name: testing variables preference
     vars:
       NAME: from task level
     ansible.builtin.debug:

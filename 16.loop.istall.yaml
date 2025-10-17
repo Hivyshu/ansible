@@ -1,4 +1,4 @@
-- nmae: install packages
+- name: install packages
   hosts: local
   connection: local
   task:

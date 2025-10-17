@@ -1,0 +1,12 @@
+- nmae: install packages
+  hosts: local
+  connection: local
+  task:
+  - name: print names
+    ansibe.builtin.package:
+      name: "{{ item }}"
+      state: latest
+    loops:
+    - nginx
+    - mysql
+    - zip

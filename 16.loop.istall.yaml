@@ -1,7 +1,7 @@
-- name: install packages
+- name: Install packages
   hosts: local
   connection: local
-  task:
+  tasks:
   - name: print names
     ansibe.builtin.package:
       name: "{{ item }}"

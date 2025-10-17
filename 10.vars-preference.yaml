@@ -1,0 +1,13 @@
+- name: vars prefence
+  hosts: local
+  connections: local
+  vars:
+    NAME: from play level
+  vars_files: 
+  - course.yaml
+  vars_prompt:
+  - name: testing variable preference
+    vars:
+      NAME: from task level
+    ansible.builtin.debug:
+      msg: "Name: {{ NAME }}"

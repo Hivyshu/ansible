@@ -1,6 +1,6 @@
 - name: vars prefence
   hosts: local
-  connections: local
+  connection: local
   vars:
     NAME: from play level
   vars_files: 

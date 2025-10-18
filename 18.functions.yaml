@@ -1,8 +1,8 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
-    technologies: DevOps, linux, shell #string
+  # vars:
+  #   technologies: DevOps, linux, shell #string
     
   tasks:
   - name: default variable

@@ -1,0 +1,38 @@
+- name: functions
+  hosts: local
+  connection: local
+  vars:
+    technologies: DevOps, linux, shell #string
+    
+  tasks:
+  - name: default variable
+    ansible.builtin.debug:
+      msg: "Hello, {{ name | default('Ramesh') }}"
+# if variable is not defined(name) then it prints default variable(ramesh)
+
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "Technologies are: {{ technologies | split(',') }}"
+# converting string to list
+
+  - name: convert map into list
+    ansible.builtin.debug:
+       msg: "Tags are: {{ tags | dict2items }}"
+# convertion of list to dictionary
+ 
+  - name: convert list into map
+    ansible.builtin.debug:
+       msg: "tags map: {{ listTags | item2dict }}"
+# convertion of list to map or dictionary
+
+  - name: read yaml and take it into variable
+    ansible.builtin.set_fact:
+       course.yaml: "{{ loookup('file', 'course.yaml') | from_yaml }}"
+  - name: convert yaml into json
+    ansible.builtin.debug:
+       msg: "json: {{ course.yaml | to_json }}"
+  - name: save json to file
+    ansible.builtin.debug:
+       dest: ./course-data.json
+       content: "{{ course.yaml | to_nice_json }}"
+ #to convert from yaml to json

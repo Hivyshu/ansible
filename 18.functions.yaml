@@ -14,12 +14,12 @@
 
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "Technologies are: {{ technologies | split(',') }}"
+      msg: "technologies are: {{ technologies | split(',') }}"
 # converting string to list
 
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "Tags are: {{ tags | dict2items }}"
+      msg: "tags are: {{ tags | dict2items }}"
 # convertion of dictionary to list
  
 #   - name: convert list into map

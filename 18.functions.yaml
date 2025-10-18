@@ -15,9 +15,9 @@
       msg: "Technologies are: {{ technologies | split(',') }}"
 # converting string to list
 
-#   - name: convert map into list
-#     ansible.builtin.debug:
-#        msg: "Tags are: {{ tags | dict2items }}"
+  - name: convert map into list
+    ansible.builtin.debug:
+       msg: "Tags are: {{ tags | dict2items }}"
 # # convertion of list to dictionary
  
 #   - name: convert list into map

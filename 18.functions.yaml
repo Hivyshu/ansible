@@ -24,7 +24,7 @@
  
   - name: convert list into map
     ansible.builtin.debug:
-       msg: "tag map: {{ listTags | items2dict }}"
+       msg: "tag map: {{ listtags | items2dict }}"
 #  # convertion of list to map or dictionary
 
 #   - name: read yaml and take it into variable

@@ -4,8 +4,8 @@
   vars:
      technologies: DevOps, linux, shell #string
      tags:
-     Application: payment
-     Environment: dev
+       Application: payment
+       Environment: dev
   tasks:
   - name: default variable
     ansible.builtin.debug:

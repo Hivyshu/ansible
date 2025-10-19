@@ -47,3 +47,10 @@
       dest: ./course-data.json
       content: "{{ course_yaml | to_nice_json }}"
   #to convert from yaml to json
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"

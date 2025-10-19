@@ -42,8 +42,8 @@
     ansible.builtin.debug:
       msg: "json: {{ course_yaml | to_json }}"
       
-#   - name: save json to file
-#     ansible.builtin.debug:
-#         dest: ./course-data.json
-#         content: "{{ course.yaml | to_nice_json }}"
-# #  #to convert from yaml to json
+  - name: save json to file
+    ansible.builtin.debug:
+      dest: ./course-data.json
+      content: "{{ course.yaml | to_nice_json }}"
+  #to convert from yaml to json

@@ -45,5 +45,5 @@
   - name: save json to file
     ansible.builtin.debug:
       dest: ./course-data.json
-      content: "{{ course.yaml | to_nice_json }}"
+      content: "{{ course_yaml | to_nice_json }}"
   #to convert from yaml to json
